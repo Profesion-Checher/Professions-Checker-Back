@@ -1,27 +1,40 @@
-from django.shortcuts import get_object_or_404, redirect, render
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from rest_framework import status
 from .models import Profession
+from .serializers import ProfessionSerializer
 
-def profession_list(request):
-    professions = Profession.objects.all()
-    return render(request, 'professions/list.html', {'professions': professions})
-
-def profession_create(request):
+@api_view(['GET', 'POST'])
+def profession_list_create(request):
+    if request.method == 'GET':
+        professions = Profession.objects.all()
+        serializer = ProfessionSerializer(professions, many=True)
+        return Response(serializer.data)
+    
     if request.method == 'POST':
-        name = request.POST.get('name')
-        Profession.objects.create(name=name)
-        return redirect('profession_list')
-    return render(request, 'professions/create.html')
+        serializer = ProfessionSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-def profession_delete(request):
-    profession = get_object_or_404(Profession, id=id)
-    profession.delete()
-    return redirect('profession_list')
+@api_view(['GET', 'PUT', 'DELETE'])
+def profession_detail(request, id):
+    profession = Profession.objects.filter(id=id).first()
+    if not profession:
+        return Response({'error': 'No encontrado'}, status=status.HTTP_404_NOT_FOUND)
 
-def profession_update(request):
-    profession = get_object_or_404(Profession, id=id)
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        profession.name = name
-        profession.save()
-        return redirect('profession_list')
-    return render(request, 'professions/update.html', {'profession': profession})
+    if request.method == 'GET':
+        serializer = ProfessionSerializer(profession)
+        return Response(serializer.data)
+
+    if request.method == 'PUT':
+        serializer = ProfessionSerializer(profession, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    if request.method == 'DELETE':
+        profession.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
