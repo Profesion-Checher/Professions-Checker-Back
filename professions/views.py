@@ -1,6 +1,6 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from rest_framework import status
+from rest_framework import status, generics
 from .models import Profession
 from .serializers import ProfessionSerializer
 
@@ -38,3 +38,7 @@ def profession_detail(request, id):
     if request.method == 'DELETE':
         profession.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+class ProfessionListApiView(generics.ListAPIView):
+    queryset = Profession.objects.all()
+    serializer_class = ProfessionSerializer

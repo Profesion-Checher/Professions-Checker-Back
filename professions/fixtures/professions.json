@@ -1,0 +1,41 @@
+[
+  {
+    "model": "professions.profession",
+    "pk": 1,
+    "fields": {
+      "profession_name": "Ingeniero de Software",
+      "current_salary": 70000,
+      "future_salaries": [
+        75000,
+        80000,
+        85000
+      ]
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": 2,
+    "fields": {
+      "profession_name": "Médico",
+      "current_salary": 80000,
+      "future_salaries": [
+        85000,
+        90000,
+        95000
+      ]
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": 3,
+    "fields": {
+      "profession_name": "Arquitecto",
+      "current_salary": 60000,
+      "future_salaries": [
+        65000,
+        70000,
+        75000
+      ]
+    }
+  }
+]

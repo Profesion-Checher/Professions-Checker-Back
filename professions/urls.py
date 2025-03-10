@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import profession_list_create, profession_detail
+from .views import profession_list_create, profession_detail, ProfessionListApiView
 
 urlpatterns = [
-    path('api/professions/', profession_list_create, name='profession_list_create'),
-    path('api/professions/<int:id>/', profession_detail, name='profession_detail'),
+    # path('professions/', profession_list_create, name='profession_list_create'),
+    path('professions/<int:id>/', profession_detail, name='profession_detail'),
+
+    path('professions/', ProfessionListApiView.as_view(), name='profession-list'),
 ]
