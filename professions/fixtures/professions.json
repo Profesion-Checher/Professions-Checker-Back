@@ -3,39 +3,102 @@
     "model": "professions.profession",
     "pk": 1,
     "fields": {
-      "profession_name": "Ingeniero de Software",
-      "current_salary": 70000,
+      "profession_name": "Desarrollador Backend",
+      "current_salary": 5056000.00,
       "future_salaries": [
-        75000,
-        80000,
-        85000
-      ]
+        750000,
+        800000,
+        850000
+      ],
+      "companies": [
+        "Tuya S.A."
+      ],
+      "experience": "SR"
     }
   },
   {
     "model": "professions.profession",
     "pk": 2,
     "fields": {
-      "profession_name": "Médico",
-      "current_salary": 80000,
+      "profession_name": "Arquitecto/a de Software",
+      "current_salary": 8000000.00,
       "future_salaries": [
-        85000,
-        90000,
-        95000
-      ]
+        10000000,
+        11500000,
+        13000000
+      ],
+      "companies": [
+        "Tuya S.A."
+      ],
+      "experience": "SR"
     }
   },
   {
     "model": "professions.profession",
     "pk": 3,
     "fields": {
-      "profession_name": "Arquitecto",
-      "current_salary": 60000,
+      "profession_name": "Fullstack",
+      "current_salary": 5500000.00,
       "future_salaries": [
-        65000,
-        70000,
-        75000
-      ]
+        6500000,
+        7000000,
+        7500000
+      ],
+      "companies": [
+        "Complemento 360"
+      ],
+      "experience": "SR"
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": 4,
+    "fields": {
+      "profession_name": "Ingeniero/a de Datos",
+      "current_salary": 6200000.00,
+      "future_salaries": [
+        7500000,
+        8000000,
+        9000000
+      ],
+      "companies": [
+        "Globant"
+      ],
+      "experience": "SSr"
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": 5,
+    "fields": {
+      "profession_name": "Científico/a de Datos",
+      "current_salary": 7000000.00,
+      "future_salaries": [
+        8500000,
+        9500000,
+        11000000
+      ],
+      "companies": [
+        "Mercado Libre"
+      ],
+      "experience": "SR"
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": 6,
+    "fields": {
+      "profession_name": "DevOps Engineer",
+      "current_salary": 6800000.00,
+      "future_salaries": [
+        7800000,
+        8500000,
+        9200000
+      ],
+      "companies": [
+        "Rappi"
+      ],
+      "experience": "SSr"
     }
   }
 ]
