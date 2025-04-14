@@ -8,7 +8,7 @@
 
 | ID Caso | Nombre Caso de Prueba                  | Tipo de Escenario       | Resultado Esperado                           | Estado  |
 |---------|-----------------------------------------|--------------------------|-----------------------------------------------|---------|
-| CP_01   | ConectarAPIs_CasoFeliz                  | Flujo principal (exitoso)  | Frontend consume y muestra datos del backend  | Pendiente |
+| CP_01   | ConectarAPIs_CasoExitoso                  | Flujo principal (exitoso)  | Frontend consume y muestra datos del backend  | Pendiente |
 | CP_02   | ConectarAPIs_BackendFueraDeServicio     | Error                    | Mensaje de error al no recibir respuesta      | Pendiente |
 | CP_03   | ConectarAPIs_RespuestaVaciaDelBackend   | Flujo alternativo        | Frontend maneja sin romperse la respuesta vacía | Pendiente |
 | CP_04   | ConectarAPIs_DatosMalformateados        | Error                    | Frontend muestra mensaje de error o ignora campo inválido | Pendiente |
