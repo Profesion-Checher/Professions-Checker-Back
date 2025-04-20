@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'profesionCheckerBackEnd.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'professionchecker',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'NAME': os.getenv('POSTGRESQL_DB_NAME'),
+        'USER': os.getenv('POSTGRESQL_DB_USER'),
+        'PASSWORD': os.getenv('POSTGRESQL_DB_PASS'),
+        'HOST': os.getenv('POSTGRESQL_DB_HOST'),
         'PORT': '5432',    
     }
 }
