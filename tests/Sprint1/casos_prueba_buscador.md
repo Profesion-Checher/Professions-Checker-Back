@@ -8,14 +8,14 @@
 
 | ID Caso | Nombre Caso de Prueba              | Tipo de Escenario        | Resultado Esperado                                                                 | Estado    |
 |---------|-------------------------------------|---------------------------|-------------------------------------------------------------------------------------|-----------|
-| CP_18   | BuscarPorNombre_CasoExitoso           | Flujo principal (exitoso)   | Se muestran resultados que coinciden con el nombre ingresado                       | Pendiente |
-| CP_19   | BuscarPorNombre_SinCoincidencias    | Flujo alternativo         | Mostrar mensaje “No se encontraron resultados para tu búsqueda”                    | Pendiente |
-| CP_20   | FiltrarPorSalario_CasoExitoso         | Flujo principal (exitoso)   | Se muestran profesiones dentro del rango salarial especificado                     | Pendiente |
-| CP_21   | FiltrarPorSalario_SinCoincidencias  | Flujo alternativo         | Mostrar mensaje “No se encontraron profesiones en ese rango salarial”              | Pendiente |
+| CP_17   | BuscarPorNombre_CasoExitoso           | Flujo principal (exitoso)   | Se muestran resultados que coinciden con el nombre ingresado                       | Pendiente |
+| CP_18   | BuscarPorNombre_SinCoincidencias    | Flujo alternativo         | Mostrar mensaje “No se encontraron resultados para tu búsqueda”                    | Pendiente |
+| CP_19   | FiltrarPorSalario_CasoExitoso         | Flujo principal (exitoso)   | Se muestran profesiones dentro del rango salarial especificado                     | Pendiente |
+| CP_20   | FiltrarPorSalario_SinCoincidencias  | Flujo alternativo         | Mostrar mensaje “No se encontraron profesiones en ese rango salarial”              | Pendiente |
 
 ---
 
-## CP_18 – BuscarPorNombre_CasoExitoso
+## CP_17 – BuscarPorNombre_CasoExitoso
 
 **Descripción:** Verificar que al buscar una profesión por nombre, se muestren los resultados correctos.
 
@@ -34,7 +34,7 @@ Se muestran resultados que coinciden exactamente o parcialmente con el texto ing
 
 ---
 
-## CP_19 – BuscarPorNombre_SinCoincidencias
+## CP_18 – BuscarPorNombre_SinCoincidencias
 
 **Descripción:** Verificar el comportamiento cuando no hay coincidencias con la búsqueda.
 
@@ -49,7 +49,7 @@ Mostrar un mensaje claro: “No se encontraron resultados para tu búsqueda”.
 
 ---
 
-## CP_20 – FiltrarPorSalario_CasoExitoso
+## CP_19 – FiltrarPorSalario_CasoExitoso
 
 **Descripción:** Verificar que el sistema muestre correctamente las profesiones que se encuentran en el rango salarial seleccionado.
 
@@ -65,7 +65,7 @@ Mostrar únicamente las profesiones cuyo salario esté dentro del rango seleccio
 
 ---
 
-## CP_21 – FiltrarPorSalario_SinCoincidencias
+## CP_20 – FiltrarPorSalario_SinCoincidencias
 
 **Descripción:** Comprobar el comportamiento cuando el rango seleccionado no contiene ninguna profesión.
 

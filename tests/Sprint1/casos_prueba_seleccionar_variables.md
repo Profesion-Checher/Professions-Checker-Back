@@ -8,14 +8,14 @@
 
 | ID Caso | Nombre Caso de Prueba                  | Tipo de Escenario         | Resultado Esperado                                                                       | Estado    |
 |---------|-----------------------------------------|----------------------------|-------------------------------------------------------------------------------------------|-----------|
-| CP_30   | SeleccionVars_GenerarHeatmap           | Análisis exploratorio      | Se genera y visualiza un heatmap con las correlaciones entre variables                   | Pendiente |
-| CP_31   | SeleccionVars_TestMultiplesComb        | Evaluación comparativa     | Se documentan al menos dos combinaciones diferentes de variables con sus métricas        | Pendiente |
-| CP_32   | SeleccionVars_ElegirFinal              | Validación cruzada         | Se selecciona la combinación con mejor performance basada en validación cruzada          | Pendiente |
-| CP_33   | SeleccionVars_CasoError                | Flujo alternativo          | Si hay error en el análisis (faltan columnas, tipo incorrecto), se lanza mensaje claro   | Pendiente |
+| CP_29   | SeleccionVars_GenerarHeatmap           | Análisis exploratorio      | Se genera y visualiza un heatmap con las correlaciones entre variables                   | Pendiente |
+| CP_30   | SeleccionVars_TestMultiplesComb        | Evaluación comparativa     | Se documentan al menos dos combinaciones diferentes de variables con sus métricas        | Pendiente |
+| CP_31   | SeleccionVars_ElegirFinal              | Validación cruzada         | Se selecciona la combinación con mejor performance basada en validación cruzada          | Pendiente |
+| CP_32   | SeleccionVars_CasoError                | Flujo alternativo          | Si hay error en el análisis (faltan columnas, tipo incorrecto), se lanza mensaje claro   | Pendiente |
 
 ---
 
-## CP_30 – SeleccionVars_GenerarHeatmap
+## CP_29 – SeleccionVars_GenerarHeatmap
 
 **Descripción:** Verificar que se genere un mapa de calor visualizando las correlaciones entre todas las variables del dataset.
 
@@ -34,7 +34,7 @@ El sistema genera una visualización clara en forma de heatmap que muestra la fu
 
 ---
 
-## CP_31 – SeleccionVars_TestMultiplesComb
+## CP_30 – SeleccionVars_TestMultiplesComb
 
 **Descripción:** Validar que se prueben al menos dos combinaciones diferentes de variables predictoras con sus respectivas métricas.
 
@@ -50,7 +50,7 @@ Se documentan los resultados (RMSE, R², MAE, etc.) por cada conjunto probado y 
 
 ---
 
-## CP_32 – SeleccionVars_ElegirFinal
+## CP_31 – SeleccionVars_ElegirFinal
 
 **Descripción:** Verificar que se elige la combinación óptima de variables según el mejor rendimiento medido en validación cruzada.
 
@@ -66,7 +66,7 @@ Se selecciona un conjunto de variables óptimo con resultados consistentes y baj
 
 ---
 
-## CP_33 – SeleccionVars_CasoError
+## CP_32 – SeleccionVars_CasoError
 
 **Descripción:** Probar el comportamiento del sistema si el análisis no puede realizarse (datos faltantes, nombres incorrectos, etc.).
 

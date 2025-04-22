@@ -8,14 +8,14 @@
 
 | ID Caso | Nombre Caso de Prueba                  | Tipo de Escenario         | Resultado Esperado                                                                     | Estado    |
 |---------|-----------------------------------------|----------------------------|-----------------------------------------------------------------------------------------|-----------|
-| CP_26   | Validacion_Nulos                       | Validación de datos        | Se identifican y reportan los valores nulos por columna                                 | Pendiente |
-| CP_27   | Validacion_ImputacionEliminacion       | Transformación de datos    | Se aplican técnicas de imputación o eliminación correctamente                           | Pendiente |
-| CP_28   | Validacion_DuplicadosTipos             | Limpieza de datos          | Se eliminan duplicados y se verifica que los tipos de datos sean correctos              | Pendiente |
-| CP_29   | Validacion_ErrorInesperado             | Flujo alternativo          | Si ocurre error inesperado, se lanza mensaje de advertencia y se cancela el preprocesado | Pendiente |
+| CP_25   | Validacion_Nulos                       | Validación de datos        | Se identifican y reportan los valores nulos por columna                                 | Pendiente |
+| CP_26   | Validacion_ImputacionEliminacion       | Transformación de datos    | Se aplican técnicas de imputación o eliminación correctamente                           | Pendiente |
+| CP_27   | Validacion_DuplicadosTipos             | Limpieza de datos          | Se eliminan duplicados y se verifica que los tipos de datos sean correctos              | Pendiente |
+| CP_28   | Validacion_ErrorInesperado             | Flujo alternativo          | Si ocurre error inesperado, se lanza mensaje de advertencia y se cancela el preprocesado | Pendiente |
 
 ---
 
-## CP_26 – Validacion_Nulos
+## CP_25 – Validacion_Nulos
 
 **Descripción:** Verificar que se identifiquen correctamente los valores nulos por columna y se genere un reporte claro.
 
@@ -34,7 +34,7 @@ Se muestra una tabla o log con el conteo de nulos por columna, sin errores de ej
 
 ---
 
-## CP_27 – Validacion_ImputacionEliminacion
+## CP_26 – Validacion_ImputacionEliminacion
 
 **Descripción:** Validar que, al encontrar valores nulos, se apliquen correctamente las técnicas de imputación o eliminación según el caso.
 
@@ -50,7 +50,7 @@ Se procesan los valores nulos y se obtiene un dataset limpio sin pérdidas innec
 
 ---
 
-## CP_28 – Validacion_DuplicadosTipos
+## CP_27 – Validacion_DuplicadosTipos
 
 **Descripción:** Asegurar que los datos no tengan duplicados y los tipos de cada columna sean consistentes con su propósito.
 
@@ -66,7 +66,7 @@ No hay registros duplicados y los tipos de datos son adecuados para cada variabl
 
 ---
 
-## CP_29 – Validacion_ErrorInesperado
+## CP_28 – Validacion_ErrorInesperado
 
 **Descripción:** Evaluar qué ocurre si se introduce un dataset con errores estructurales graves (faltan columnas clave, tipos incompatibles).
 

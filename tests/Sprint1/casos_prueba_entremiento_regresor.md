@@ -8,14 +8,14 @@
 
 | ID Caso | Nombre Caso de Prueba              | Tipo de Escenario        | Resultado Esperado                                                               | Estado    |
 |---------|-------------------------------------|---------------------------|-----------------------------------------------------------------------------------|-----------|
-| CP_22   | Regresor_EntrenamientoCorrecto      | Flujo principal (exitoso)   | El modelo OLS es entrenado con el 70% de los datos sin errores                   | Pendiente |
-| CP_23   | Regresor_EvaluacionCorrecta         | Flujo principal (exitoso)   | El 30% de los datos se usa para evaluar el modelo, obteniendo métricas válidas   | Pendiente |
-| CP_24   | Regresor_GuardadoModelo             | Guardado persistente      | El modelo entrenado se guarda correctamente como archivo `.pkl`                  | Pendiente |
-| CP_25   | Regresor_ErrorEntrenamiento         | Flujo alternativo         | Si ocurre un error durante el entrenamiento, se captura y se muestra mensaje     | Pendiente |
+| CP_21   | Regresor_EntrenamientoCorrecto      | Flujo principal (exitoso)   | El modelo OLS es entrenado con el 70% de los datos sin errores                   | Pendiente |
+| CP_22   | Regresor_EvaluacionCorrecta         | Flujo principal (exitoso)   | El 30% de los datos se usa para evaluar el modelo, obteniendo métricas válidas   | Pendiente |
+| CP_23   | Regresor_GuardadoModelo             | Guardado persistente      | El modelo entrenado se guarda correctamente como archivo `.pkl`                  | Pendiente |
+| CP_24   | Regresor_ErrorEntrenamiento         | Flujo alternativo         | Si ocurre un error durante el entrenamiento, se captura y se muestra mensaje     | Pendiente |
 
 ---
 
-## CP_22 – Regresor_EntrenamientoCorrecto
+## CP_21 – Regresor_EntrenamientoCorrecto
 
 **Descripción:** Verificar que el modelo de regresión lineal OLS se entrene con al menos el 70% de los datos.
 
@@ -34,7 +34,7 @@ Modelo entrenado con éxito sobre los datos de entrenamiento.
 
 ---
 
-## CP_23 – Regresor_EvaluacionCorrecta
+## CP_22 – Regresor_EvaluacionCorrecta
 
 **Descripción:** Evaluar el rendimiento del modelo usando el 30% restante del dataset.
 
@@ -50,7 +50,7 @@ Se obtienen métricas que permiten evaluar si el modelo es funcional en una prim
 
 ---
 
-## CP_24 – Regresor_GuardadoModelo
+## CP_23 – Regresor_GuardadoModelo
 
 **Descripción:** Comprobar que el modelo entrenado se guarda correctamente en un archivo `.pkl`.
 
@@ -66,7 +66,7 @@ El archivo `modelo_regresor.pkl` (o similar) es creado y almacena el modelo entr
 
 ---
 
-## CP_25 – Regresor_ErrorEntrenamiento
+## CP_24 – Regresor_ErrorEntrenamiento
 
 **Descripción:** Validar que si ocurre un error durante el entrenamiento, el sistema lo detecta y muestra mensaje adecuado.
 
