@@ -28,11 +28,16 @@
 **Resultado esperado:**  
 El frontend debe mostrar los datos devueltos por el backend correctamente (lista de profesiones).
 
-**Estado del caso:** Exitoso   
+**Estado del caso:** Exitoso
+
 **Resultado obtenido:** El frontend muestra correctamente los datos obtenidos del backend. 
+
 **Errores asociados:** Ninguno 
+
 **Responsable diseño:** Marcela 
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Asegúrese de que el `.env` de frontend tenga la URL del backend correcta.
 
 ---
@@ -50,10 +55,15 @@ El frontend debe mostrar los datos devueltos por el backend correctamente (lista
 El frontend debe mostrar un mensaje de error tipo: “No se pudo obtener la información. Intente más tarde”.
 
 **Estado del caso:** Exitoso  
+
 **Resultado obtenido:** El frontend muestra un mensaje: "Load failed" 
+
 **Errores asociados:** No se pudo establecer conexión con el backend. Frontend capturó correctamente el error. 
-**Responsable diseño:** Marcela  
+
+**Responsable diseño:** Marcela
+
 **Responsable ejecución:** Marcela
+
 **Comentarios:** Esto prueba la resiliencia del frontend frente a fallos del backend.
 
 ---
@@ -70,10 +80,15 @@ El frontend debe mostrar un mensaje de error tipo: “No se pudo obtener la info
 El frontend debe mostrar un mensaje como: “No hay resultados disponibles” y no debe mostrar errores en consola.
 
 **Estado:** Exitoso 
+
 **Resultado obtenido:** El frontend no muestra ningún mensaje, ni error visible.
-**Errores asociados:** Falta manejo adecuado para datos vacíos. 
+
+**Errores asociados:** Falta manejo adecuado para datos vacíos.
+
 **Responsable diseño:** Marcela  
+
 **Responsable ejecución:** Marcela
+
 **Comentarios:** Ideal para validar UX cuando no hay contenido.
 
 ---
@@ -90,10 +105,15 @@ El frontend debe mostrar un mensaje como: “No hay resultados disponibles” y 
 El frontend debería evitar romperse. Puede mostrar un mensaje como “Dato no disponible” o ignorar ese campo.
 
 **Estado:** Exitoso 
+
 **Resultado obtenido:** El frontend no muestra ningún mensaje, ni error visible.
+
 **Errores asociados:** Falta manejo adecuado para datos incompletos o mal formateados.
-**Responsable diseño:** Marcela  
+
+**Responsable diseño:** Marcela 
+
 **Responsable ejecución:** Marcela
+
 **Comentarios:** Importante validar que el frontend tenga validaciones para casos inesperados.
 
 ---

@@ -27,11 +27,16 @@
 **Resultado esperado:**  
 Se despliega una lista de profesiones del sector de tecnologías como: Desarrollador, QA, Analista de datos, etc.
 
-**Estado del caso:** Exitoso  
+**Estado del caso:** Exitoso 
+
 **Resultado obtenido:** El frontend muestra correctamente la lista de las profesiones obtenidos del backend. 
+
 **Errores asociados:** Ninguno 
+
 **Responsable diseño:** Marcela  
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Verificar que se vean todas y que estén correctamente escritas.
 
 ---
@@ -48,10 +53,15 @@ Se despliega una lista de profesiones del sector de tecnologías como: Desarroll
 El sistema debe mostrar un mensaje tipo: “No se pudo cargar la información. Intenta más tarde”.
 
 **Estado del caso:** Exitoso 
-**Resultado obtenido:** El frontend muestra un mensaje "Load failed"
+
+**Resultado obtenido:** El frontend muestra un mensaje "Load failed".
+
 **Errores asociados:** No se pudo establecer conexión con el backend. Frontend capturó correctamente el error. 
-**Responsable diseño:** Marcela  
+
+**Responsable diseño:** Marcela 
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Asegura buena gestión de errores y feedback al usuario.
 
 ---
@@ -68,10 +78,15 @@ El sistema debe mostrar un mensaje tipo: “No se pudo cargar la información. I
 Mostrar mensaje como: “Actualmente no hay profesiones disponibles”.
 
 **Estado del caso:** Exitoso  
+
 **Resultado obtenido:** El frontend muestra un mensaje "No se encontraron profesiones".
+
 **Errores asociados:** Ninguno 
-**Responsable diseño:** Marcela  
+
+**Responsable diseño:** Marcela 
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Aporta a una mejor experiencia de usuario.
 
 ---
@@ -88,11 +103,16 @@ Mostrar mensaje como: “Actualmente no hay profesiones disponibles”.
 Todas las profesiones deben estar relacionadas con el sector de tecnologías. Ej: DevOps, Ciberseguridad, etc.  
 Ninguna profesión ajena (ej: Panadero, Médico) debe aparecer.
 
-**Estado del caso:** Exitoso  
+**Estado del caso:** Exitoso 
+
 **Resultado obtenido:** Todas las profesiones que se muestran en el frontend son del sector tecnológico.
+
 **Errores asociados:** Ninguno 
-**Responsable diseño:** Marcela  
+
+**Responsable diseño:** Marcela 
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Esto verifica que se aplique correctamente un filtro por categoría.
 
 ---

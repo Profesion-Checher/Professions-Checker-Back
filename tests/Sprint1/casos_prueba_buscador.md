@@ -27,7 +27,7 @@
 **Resultado esperado:**  
 Se muestran resultados que coinciden exactamente o parcialmente con el texto ingresado.
 
-**Estado del caso:** Pendiente  
+**Estado del caso:** Pendiente
 **Responsable diseño:** Marcela 
 **Responsable ejecución:** Marcela
 **Comentarios:** Validar tanto coincidencias exactas como parciales.

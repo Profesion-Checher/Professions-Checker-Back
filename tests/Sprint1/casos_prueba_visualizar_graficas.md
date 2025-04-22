@@ -27,10 +27,15 @@
 Se visualizan gráficos funcionales (línea) con predicciones salariales para los próximos años, categorizados por profesión del sector TI.
 
 **Estado del caso:** Exitoso
+
 **Resultado obtenido:** El frontend muestra correctamente las gráficas de cada profesión. 
+
 **Errores asociados:** Ninguno
+
 **Responsable diseño:** Marcela  
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Se debe validar la precisión visual y comprensibilidad de las gráficas.
 
 ---
@@ -47,10 +52,15 @@ Se visualizan gráficos funcionales (línea) con predicciones salariales para lo
 Mostrar un mensaje del tipo: “No hay datos disponibles para generar gráficas”.
 
 **Estado del caso:** Exitoso
+
 **Resultado obtenido:** Las gráficas se muestran vacías pero no hay un mensaje asociado.
+
 **Errores asociados:** Las gráficas del frontend se renderizan vacías al recibir una respuesta sin datos, pero no muestra ningún mensaje explicativo para el usuario.
+
 **Responsable diseño:** Marcela  
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Importante mostrar feedback al usuario sin fallos visuales.
 
 ---
@@ -67,10 +77,15 @@ Mostrar un mensaje del tipo: “No hay datos disponibles para generar gráficas�
 Mostrar un mensaje de error informativo: “Los datos no son válidos para graficar”.
 
 **Estado del caso:** Exitoso
+
 **Resultado obtenido:** Las gráficas muestran los valores correctos normal, sin embargo los valores no válidos no los grafica y no muestra ningún mensaje. 
+
 **Errores asociados:** No se informa al usuario sobre la exclusión de datos inválidos.
+
 **Responsable diseño:** Marcela  
+
 **Responsable ejecución:** Marcela 
+
 **Comentarios:** Evita mostrar gráficas incoherentes o que generen errores en la interfaz.
 
 ---
