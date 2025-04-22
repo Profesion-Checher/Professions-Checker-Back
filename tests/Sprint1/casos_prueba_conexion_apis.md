@@ -8,10 +8,10 @@
 
 | ID Caso | Nombre Caso de Prueba                  | Tipo de Escenario       | Resultado Esperado                           | Estado  |
 |---------|-----------------------------------------|--------------------------|-----------------------------------------------|---------|
-| CP_01   | ConectarAPIs_CasoExitoso                  | Flujo principal (exitoso)  | Frontend consume y muestra datos del backend  | Pendiente |
-| CP_02   | ConectarAPIs_BackendFueraDeServicio     | Error                    | Mensaje de error al no recibir respuesta      | Pendiente |
-| CP_03   | ConectarAPIs_RespuestaVaciaDelBackend   | Flujo alternativo        | Frontend maneja sin romperse la respuesta vacía | Pendiente |
-| CP_04   | ConectarAPIs_DatosMalformateados        | Error                    | Frontend muestra mensaje de error o ignora campo inválido | Pendiente |
+| CP_01   | ConectarAPIs_CasoExitoso                  | Flujo principal (exitoso)  | Frontend consume y muestra datos del backend  | Completado |
+| CP_02   | ConectarAPIs_BackendFueraDeServicio     | Error                    | Mensaje de error al no recibir respuesta      | Completado |
+| CP_03   | ConectarAPIs_RespuestaVaciaDelBackend   | Flujo alternativo        | Frontend maneja sin romperse la respuesta vacía | Completado |
+| CP_04   | ConectarAPIs_DatosMalformateados        | Error                    | Frontend muestra mensaje de error o ignora campo inválido | Completado |
 
 ---
 
@@ -28,9 +28,9 @@
 **Resultado esperado:**  
 El frontend debe mostrar los datos devueltos por el backend correctamente (lista de profesiones).
 
-**Estado del caso:** Pendiente de ejecución  
-**Resultado obtenido:** *(Se completa tras ejecución)*  
-**Errores asociados:** *(Se registra si ocurre alguno)*  
+**Estado del caso:** Completado  
+**Resultado obtenido:** El frontend muestra correctamente los datos obtenidos del backend. 
+**Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela 
 **Responsable ejecución:** Marcela 
 **Comentarios:** Asegúrese de que el `.env` de frontend tenga la URL del backend correcta.
@@ -49,9 +49,9 @@ El frontend debe mostrar los datos devueltos por el backend correctamente (lista
 **Resultado esperado:**  
 El frontend debe mostrar un mensaje de error tipo: “No se pudo obtener la información. Intente más tarde”.
 
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** *(esperado tras ejecución)*  
-**Errores asociados:** *(si corresponde)*  
+**Estado del caso:** Completado 
+**Resultado obtenido:** El frontend muestra un mensaje: "Load failed" 
+**Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela
 **Comentarios:** Esto prueba la resiliencia del frontend frente a fallos del backend.
@@ -69,7 +69,11 @@ El frontend debe mostrar un mensaje de error tipo: “No se pudo obtener la info
 **Resultado esperado:**  
 El frontend debe mostrar un mensaje como: “No hay resultados disponibles” y no debe mostrar errores en consola.
 
-**Estado:** Pendiente  
+**Estado:** Completado 
+**Resultado obtenido:** El frontend no muestra ningún mensaje, ni error visible.
+**Errores asociados:** Falta manejo adecuado para datos vacíos. 
+**Responsable diseño:** Marcela  
+**Responsable ejecución:** Marcela
 **Comentarios:** Ideal para validar UX cuando no hay contenido.
 
 ---
@@ -85,7 +89,11 @@ El frontend debe mostrar un mensaje como: “No hay resultados disponibles” y 
 **Resultado esperado:**  
 El frontend debería evitar romperse. Puede mostrar un mensaje como “Dato no disponible” o ignorar ese campo.
 
-**Estado:** Pendiente  
+**Estado:** Completado
+**Resultado obtenido:** El frontend no muestra ningún mensaje, ni error visible.
+**Errores asociados:** Falta manejo adecuado para datos incompletos o mal formateados.
+**Responsable diseño:** Marcela  
+**Responsable ejecución:** Marcela
 **Comentarios:** Importante validar que el frontend tenga validaciones para casos inesperados.
 
 ---
