@@ -8,10 +8,10 @@
 
 | ID Caso | Nombre Caso de Prueba                  | Tipo de Escenario       | Resultado Esperado                           | Estado  |
 |---------|-----------------------------------------|--------------------------|-----------------------------------------------|---------|
-| CP_01   | ConectarAPIs_CasoExitoso                  | Flujo principal (exitoso)  | Frontend consume y muestra datos del backend  | Completado |
-| CP_02   | ConectarAPIs_BackendFueraDeServicio     | Error                    | Mensaje de error al no recibir respuesta      | Completado |
-| CP_03   | ConectarAPIs_RespuestaVaciaDelBackend   | Flujo alternativo        | Frontend maneja sin romperse la respuesta vacía | Completado |
-| CP_04   | ConectarAPIs_DatosMalformateados        | Error                    | Frontend muestra mensaje de error o ignora campo inválido | Completado |
+| CP_01   | ConectarAPIs_CasoExitoso                  | Flujo principal (exitoso)  | Frontend consume y muestra datos del backend  | Exitoso |
+| CP_02   | ConectarAPIs_BackendFueraDeServicio     | Error                    | Mensaje de error al no recibir respuesta      | Exitoso |
+| CP_03   | ConectarAPIs_RespuestaVaciaDelBackend   | Flujo alternativo        | Frontend maneja sin romperse la respuesta vacía | Exitoso |
+| CP_04   | ConectarAPIs_DatosMalformateados        | Error                    | Frontend muestra mensaje de error o ignora campo inválido | Exitoso |
 
 ---
 
@@ -28,7 +28,7 @@
 **Resultado esperado:**  
 El frontend debe mostrar los datos devueltos por el backend correctamente (lista de profesiones).
 
-**Estado del caso:** Completado  
+**Estado del caso:** Exitoso   
 **Resultado obtenido:** El frontend muestra correctamente los datos obtenidos del backend. 
 **Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela 
@@ -49,9 +49,9 @@ El frontend debe mostrar los datos devueltos por el backend correctamente (lista
 **Resultado esperado:**  
 El frontend debe mostrar un mensaje de error tipo: “No se pudo obtener la información. Intente más tarde”.
 
-**Estado del caso:** Completado 
+**Estado del caso:** Exitoso  
 **Resultado obtenido:** El frontend muestra un mensaje: "Load failed" 
-**Errores asociados:** Ninguno 
+**Errores asociados:** No se pudo establecer conexión con el backend. Frontend capturó correctamente el error. 
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela
 **Comentarios:** Esto prueba la resiliencia del frontend frente a fallos del backend.
@@ -69,7 +69,7 @@ El frontend debe mostrar un mensaje de error tipo: “No se pudo obtener la info
 **Resultado esperado:**  
 El frontend debe mostrar un mensaje como: “No hay resultados disponibles” y no debe mostrar errores en consola.
 
-**Estado:** Completado 
+**Estado:** Exitoso 
 **Resultado obtenido:** El frontend no muestra ningún mensaje, ni error visible.
 **Errores asociados:** Falta manejo adecuado para datos vacíos. 
 **Responsable diseño:** Marcela  
@@ -89,7 +89,7 @@ El frontend debe mostrar un mensaje como: “No hay resultados disponibles” y 
 **Resultado esperado:**  
 El frontend debería evitar romperse. Puede mostrar un mensaje como “Dato no disponible” o ignorar ese campo.
 
-**Estado:** Completado
+**Estado:** Exitoso 
 **Resultado obtenido:** El frontend no muestra ningún mensaje, ni error visible.
 **Errores asociados:** Falta manejo adecuado para datos incompletos o mal formateados.
 **Responsable diseño:** Marcela  

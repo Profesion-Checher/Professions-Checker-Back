@@ -7,6 +7,7 @@ from .serializers import ProfessionSerializer
 @api_view(['GET', 'POST'])
 def profession_list_create(request):
     if request.method == 'GET':
+        #return Response([])
         professions = Profession.objects.all()
         serializer = ProfessionSerializer(professions, many=True)
         return Response(serializer.data)
@@ -40,5 +41,6 @@ def profession_detail(request, id):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 class ProfessionListApiView(generics.ListAPIView):
+    #queryset = []
     queryset = Profession.objects.all()
     serializer_class = ProfessionSerializer
