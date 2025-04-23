@@ -1,11 +1,11 @@
-# 🔐 Casos de Prueba Funcionales – Historia de Usuario #1
+# Casos de Prueba Funcionales – Historia de Usuario #1
 
 **Historia de Usuario:** Login/Register  
 **Descripción:** Yo como usuario quiero iniciar sesión o registrarme si no tengo una cuenta.
 
 ---
 
-## ✅ Tabla Resumen de Casos de Prueba
+## Tabla Resumen de Casos de Prueba
 
 | ID Caso | Nombre Caso de Prueba        | Tipo de Escenario       | Resultado Esperado                                                       | Estado    |
 |---------|-------------------------------|--------------------------|---------------------------------------------------------------------------|-----------|
@@ -86,15 +86,15 @@ Se muestra mensaje: “Correo o contraseña incorrectos”.
 
 **Pasos:**
 1. Acceder a la página de registro.
-2. Llenar nombre, apellido, tipo de usuario, correo y contraseña.
+2. Llenar nombre, apellido, correo y contraseña.
 3. Enviar formulario.
 
 **Resultado esperado:**  
-El usuario se registra correctamente y se le redirige al login o dashboard.
+El usuario se registra correctamente mostrando un mensaje "usuario registrado".
 
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
+**Estado del caso:** Exitoso  
+**Resultado obtenido:** El usuario se registra correctamente y se muestra el mensaje "usuario registrado".
+**Errores asociados:** Ninguno
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
 **Comentarios:** Probar también que no se repita un correo existente.
