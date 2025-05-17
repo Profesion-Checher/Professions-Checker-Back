@@ -17,6 +17,10 @@ class ClientManager(BaseUserManager):
     )
     user.set_password(password)
     user.save(using=self._db)
+
+    if 'professions' in extra_fields:
+      user.professions.set(extra_fields['professions'])
+
     return user
 
   def create_superuser(self, email, first_name, last_name, password=None, **extra_fields):
@@ -32,6 +36,9 @@ class Client(AbstractBaseUser, PermissionsMixin):
   company = models.CharField(max_length=100, blank=True, null=True)
   profession = models.CharField(max_length=100, blank=True, null=True)
   salary = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
+
+  professions = models.ManyToManyField('professions.Profession', blank=True, related_name='clients')
+  interested_professions = models.ManyToManyField('professions.Profession', blank=True, related_name='interested_clients')
 
   is_active = models.BooleanField(default=True)
   is_staff = models.BooleanField(default=False)
