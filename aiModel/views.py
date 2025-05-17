@@ -1,6 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .services import get_predicted_salary
+from .services import get_predicted_salary, load_data
 
 class SalaryPredictionView(APIView):
     def post(self, request):
@@ -16,3 +16,7 @@ class SalaryPredictionView(APIView):
             "year": work_year,
             "predicted_salary": predicted_salary
         })
+    def get(self, request):
+        load_data()
+        return Response({"message": "Data loaded successfully"})
+        
