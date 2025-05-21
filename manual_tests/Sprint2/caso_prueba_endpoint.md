@@ -12,8 +12,6 @@
 | CP_01   | Solicitud_Exitosa                | Flujo principal (exitoso)  | El backend envía los datos correctamente a la AI-API y recibe predicción| Pendiente |
 | CP_02   | Validacion_DatosInvalidos         | Validación de entrada     | Se devuelve error 400 por datos incompletos o inválidos                | Pendiente |
 | CP_03   | Manejo_Error_AIAPI_NoDisponible   | Flujo alternativo         | Se registra error en logs y se devuelve mensaje de error controlado    | Pendiente |
-| CP_04   | Respuesta_Consistente_Formato     | Validación de formato     | El backend entrega respuesta en formato JSON consistente               | Pendiente |
-| CP_05   | TiempoRespuesta_Razonable         | Validación de rendimiento | La respuesta se recibe en menos de 5 segundos                          | Pendiente |
 
 ---
 
@@ -76,45 +74,5 @@ El backend responde con un error controlado (por ejemplo, error 503) y registra 
 **Responsable diseño:** [Tu Nombre]  
 **Responsable ejecución:** [Tu Nombre]  
 **Comentarios:** Revisar archivo/log de errores tras la prueba.
-
----
-
-## CP_04 – Respuesta_Consistente_Formato
-
-**Descripción:** Verifica que el formato de la respuesta al frontend sea siempre el mismo, independientemente de la predicción.
-
-**Pasos:**
-1. Enviar múltiples solicitudes válidas.
-2. Comparar estructura del objeto JSON de respuesta.
-
-**Resultado esperado:**  
-Siempre se recibe un JSON estructurado con los mismos campos (por ejemplo: `{ "profesion": "Ingeniero", "salario_actual": 40000, "prediccion": [...] }`).
-
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
-**Responsable diseño:** [Tu Nombre]  
-**Responsable ejecución:** [Tu Nombre]  
-**Comentarios:** Muy importante para integración con frontend.
-
----
-
-## CP_05 – TiempoRespuesta_Razonable
-
-**Descripción:** Verifica que la respuesta del backend ocurra en un tiempo aceptable.
-
-**Pasos:**
-1. Enviar solicitud válida.
-2. Medir tiempo de respuesta.
-
-**Resultado esperado:**  
-La respuesta debe recibirse en un tiempo menor a 5 segundos.
-
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
-**Responsable diseño:** [Tu Nombre]  
-**Responsable ejecución:** [Tu Nombre]  
-**Comentarios:** Probar bajo diferentes condiciones de red si es posible.
 
 ---

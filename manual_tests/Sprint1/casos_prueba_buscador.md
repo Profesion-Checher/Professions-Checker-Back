@@ -11,7 +11,7 @@
 | CP_17   | BuscarPorNombre_CasoExitoso           | Flujo principal (exitoso)   | Se muestran resultados que coinciden con el nombre ingresado                       | Exitoso |
 | CP_18   | BuscarPorNombre_SinCoincidencias    | Flujo alternativo         | Mostrar mensaje “No se encontraron resultados para tu búsqueda”                    | Exitoso |
 | CP_19   | FiltrarPorSalario_CasoExitoso         | Flujo principal (exitoso)   | Se muestran profesiones dentro del rango salarial especificado                     | Exitoso |
-| CP_20   | FiltrarPorSalario_SinCoincidencias  | Flujo alternativo         | Mostrar mensaje “No se encontraron profesiones en ese rango salarial”              | Pendiente |
+| CP_20   | FiltrarPorSalario_SinCoincidencias  | Flujo alternativo         | Mostrar mensaje “No se encontraron profesiones en ese rango salarial”              | Exitoso |
 
 ---
 
@@ -102,11 +102,11 @@ Mostrar únicamente las profesiones cuyo salario esté dentro del rango seleccio
 **Resultado esperado:**  
 Mensaje del tipo: “No se encontraron profesiones en ese rango salarial”.
 
-**Estado del caso:** Pendiente
+**Estado del caso:** Exitoso
 
-**Resultado obtenido:** 
+**Resultado obtenido:** Se muestra el mensaje: "No se encontraron profesiones."
 
-**Errores asociados:**
+**Errores asociados:** Ninguno
 
 **Responsable diseño:** Marcela 
 

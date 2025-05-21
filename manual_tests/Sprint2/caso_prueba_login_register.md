@@ -9,12 +9,12 @@
 
 | ID Caso | Nombre Caso de Prueba        | Tipo de Escenario       | Resultado Esperado                                                       | Estado    |
 |---------|-------------------------------|--------------------------|---------------------------------------------------------------------------|-----------|
-| CP_01   | Login_Correcto                | Flujo principal (exitoso)| El usuario inicia sesión exitosamente con correo y contraseña válidos    | Pendiente |
-| CP_02   | Login_CamposVacios            | Validación de formulario | Se muestran errores por campos obligatorios no llenados                   | Pendiente |
-| CP_03   | Login_CredencialesInvalidas   | Flujo alternativo        | Se muestra error por correo o contraseña incorrectos                      | Pendiente |
-| CP_04   | Registro_Correcto             | Flujo principal (exitoso)| El usuario se registra correctamente con todos los campos completados     | Pendiente |
-| CP_05   | Registro_CamposVacios         | Validación de formulario | Se muestran errores por campos no llenados                                | Pendiente |
-| CP_06   | Registro_AutenticadorExterno  | Integración externa      | El usuario puede autenticarse mediante servicio externo (OAuth)           | Pendiente |
+| CP_04   | Login_Correcto                | Flujo principal (exitoso)| El usuario inicia sesión exitosamente con correo y contraseña válidos    | Pendiente |
+| CP_05   | Login_CamposVacios            | Validación de formulario | Se muestran errores por campos obligatorios no llenados                   | Pendiente |
+| CP_06   | Login_CredencialesInvalidas   | Flujo alternativo        | Se muestra error por correo o contraseña incorrectos                      | Pendiente |
+| CP_07   | Registro_Correcto             | Flujo principal (exitoso)| El usuario se registra correctamente con todos los campos completados     | Pendiente |
+| CP_08   | Registro_CamposVacios         | Validación de formulario | Se muestran errores por campos no llenados                                | Pendiente |
+| CP_09   | Registro_AutenticadorExterno  | Integración externa      | El usuario puede autenticarse mediante servicio externo (OAuth)           | Pendiente |
 
 ---
 
