@@ -9,16 +9,15 @@
 
 | ID Caso | Nombre Caso de Prueba        | Tipo de Escenario       | Resultado Esperado                                                       | Estado    |
 |---------|-------------------------------|--------------------------|---------------------------------------------------------------------------|-----------|
-| CP_04   | Login_Correcto                | Flujo principal (exitoso)| El usuario inicia sesión exitosamente con correo y contraseña válidos    | Pendiente |
-| CP_05   | Login_CamposVacios            | Validación de formulario | Se muestran errores por campos obligatorios no llenados                   | Pendiente |
-| CP_06   | Login_CredencialesInvalidas   | Flujo alternativo        | Se muestra error por correo o contraseña incorrectos                      | Pendiente |
-| CP_07   | Registro_Correcto             | Flujo principal (exitoso)| El usuario se registra correctamente con todos los campos completados     | Pendiente |
-| CP_08   | Registro_CamposVacios         | Validación de formulario | Se muestran errores por campos no llenados                                | Pendiente |
-| CP_09   | Registro_AutenticadorExterno  | Integración externa      | El usuario puede autenticarse mediante servicio externo (OAuth)           | Pendiente |
+| CP_04   | Login_Correcto                | Flujo principal (exitoso)| El usuario inicia sesión exitosamente con correo y contraseña válidos    | Exitoso |
+| CP_05   | Login_CamposVacios            | Validación de formulario | Se muestran errores por campos obligatorios no llenados                   | Exitoso |
+| CP_06   | Login_CredencialesInvalidas   | Flujo alternativo        | Se muestra error por correo o contraseña incorrectos                      | Exitoso |
+| CP_07   | Registro_Correcto             | Flujo principal (exitoso)| El usuario se registra correctamente con todos los campos completados     | Exitoso |
+| CP_08   | Registro_CamposVacios         | Validación de formulario | Se muestran errores por campos no llenados                                | Exitoso |
 
 ---
 
-## CP_01 – Login_Correcto
+## CP_04 – Login_Correcto
 
 **Descripción:** Verifica que el usuario pueda iniciar sesión correctamente con credenciales válidas.
 
@@ -28,18 +27,18 @@
 3. Hacer clic en “Iniciar sesión”.
 
 **Resultado esperado:**  
-El usuario es redirigido a la página principal tras autenticarse exitosamente.
+El usuario es redirigido a la página de su perfil tras autenticarse exitosamente.
 
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
+**Estado del caso:** Exitoso
+**Resultado obtenido:** El usuario es redirigifo a su página de perfil cuando se autentifica exitosamente.
+**Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
 **Comentarios:** Asegurar conexión con backend activo.
 
 ---
 
-## CP_02 – Login_CamposVacios
+## CP_05 – Login_CamposVacios
 
 **Descripción:** Verifica el comportamiento cuando se dejan campos vacíos en el formulario de login.
 
@@ -49,18 +48,18 @@ El usuario es redirigido a la página principal tras autenticarse exitosamente.
 3. Presionar “Iniciar sesión”.
 
 **Resultado esperado:**  
-Se muestran mensajes como “Este campo es obligatorio”.
+Se muestran mensajes como “Llena este campo”.
 
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
+**Estado del caso:** Exitoso  
+**Resultado obtenido:** Se muestra el mensaje "Llena este campo" arriba del campo vacío. 
+**Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
 **Comentarios:** Ideal para probar validación frontend.
 
 ---
 
-## CP_03 – Login_CredencialesInvalidas
+## CP_06 – Login_CredencialesInvalidas
 
 **Descripción:** Verifica que se muestre error si el usuario ingresa credenciales incorrectas.
 
@@ -72,15 +71,15 @@ Se muestran mensajes como “Este campo es obligatorio”.
 Se muestra mensaje: “Correo o contraseña incorrectos”.
 
 **Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
+**Resultado obtenido:** Se muestra el mensaje "Correo o contraseña incorrectos". 
+**Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
 **Comentarios:** Backend debe validar correctamente la autenticación.
 
 ---
 
-## CP_04 – Registro_Correcto
+## CP_07 – Registro_Correcto
 
 **Descripción:** Verifica que el registro funcione con todos los campos requeridos llenos.
 
@@ -93,7 +92,7 @@ Se muestra mensaje: “Correo o contraseña incorrectos”.
 El usuario se registra correctamente mostrando un mensaje "usuario registrado".
 
 **Estado del caso:** Exitoso  
-**Resultado obtenido:** El usuario se registra correctamente y se muestra el mensaje "usuario registrado".
+**Resultado obtenido:** El usuario se registra correctamente y se muestra el mensaje "usuario registrado con éxito".
 **Errores asociados:** Ninguno
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
@@ -101,7 +100,7 @@ El usuario se registra correctamente mostrando un mensaje "usuario registrado".
 
 ---
 
-## CP_05 – Registro_CamposVacios
+## CP_08 – Registro_CamposVacios
 
 **Descripción:** Verifica que el formulario de registro valide campos obligatorios.
 
@@ -111,34 +110,13 @@ El usuario se registra correctamente mostrando un mensaje "usuario registrado".
 3. Enviar formulario.
 
 **Resultado esperado:**  
-Se muestran mensajes como “Este campo es obligatorio” junto a cada campo vacío.
+Se muestran mensajes como “Llena este campo” junto a cada campo vacío.
 
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
+**Estado del caso:** Exitoso
+**Resultado obtenido:** Muestra un mensaje "Llena este campo" arriba del campo vacío.
+**Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
 **Comentarios:** Verificar si los errores se muestran dinámicamente.
-
----
-
-## CP_06 – Registro_AutenticadorExterno
-
-**Descripción:** Verifica que se pueda registrar o iniciar sesión con autenticadores externos como Google o GitHub.
-
-**Pasos:**
-1. Ir a login o registro.
-2. Hacer clic en botón “Continuar con Google/GitHub”.
-3. Completar el flujo de autenticación externo.
-
-**Resultado esperado:**  
-El usuario se autentica exitosamente y accede a la aplicación.
-
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
-**Responsable diseño:** Marcela  
-**Responsable ejecución:** Marcela  
-**Comentarios:** Validar correcto funcionamiento de OAuth2.
 
 ---
