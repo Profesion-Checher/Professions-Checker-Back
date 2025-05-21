@@ -9,8 +9,8 @@
 
 | ID Caso | Nombre Caso de Prueba     | Tipo de Escenario       | Resultado Esperado                                                  | Estado    |
 |---------|----------------------------|--------------------------|------------------------------------------------------------------------|-----------|
-| CP_01   | Despliegue_HostingCorrecto | Flujo principal (exitoso)| El sitio está disponible públicamente en un servicio de hosting       | Pendiente |
-| CP_02   | Acceso_DesdeOtroEquipo     | Validación externa       | El sitio es accesible desde otro computador o red diferente           | Pendiente |
+| CP_01   | Despliegue_HostingCorrecto | Flujo principal (exitoso)| El sitio está disponible públicamente en un servicio de hosting       | Exitoso |
+| CP_02   | Acceso_DesdeOtroEquipo     | Validación externa       | El sitio es accesible desde otro computador o red diferente           | Exitoso |
 
 ---
 
@@ -26,9 +26,9 @@
 **Resultado esperado:**  
 El sitio se carga correctamente sin errores y muestra la interfaz esperada.
 
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
+**Estado del caso:** Exitoso  
+**Resultado obtenido:** La página se carga correctamente y muestra las interfaces esperadas.  
+**Errores asociados:** Ninguno 
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
 **Comentarios:** Verificar también que los recursos (imágenes, estilos, scripts) se cargan correctamente.
@@ -47,9 +47,9 @@ El sitio se carga correctamente sin errores y muestra la interfaz esperada.
 **Resultado esperado:**  
 El sitio se muestra de forma completa y funcional en otro computador.
 
-**Estado del caso:** Pendiente  
-**Resultado obtenido:** –  
-**Errores asociados:** –  
+**Estado del caso:** Exitoso  
+**Resultado obtenido:** La página se muestra correctamente, funcional y de forma completa en otro computador. 
+**Errores asociados:** Ninguno  
 **Responsable diseño:** Marcela  
 **Responsable ejecución:** Marcela  
 **Comentarios:** Se recomienda usar navegación en modo incógnito y diferentes navegadores para asegurar compatibilidad.
