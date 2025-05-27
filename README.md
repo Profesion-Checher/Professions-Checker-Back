@@ -7,4 +7,4 @@
 * [Manual de usuario](https://github.com/Profesion-Checher/Professions-Checker-Back/wiki/Manual-de-usuario)
 * [Plan de negocios](https://github.com/Profesion-Checher/Professions-Checker-Back/wiki/Plan-de-negocios)
 * [Pruebas automáticas Backend](https://github.com/Profesion-Checher/Professions-Checker-Back/wiki/Pruebas-automáticas-de-software)
-* 
+* [Pruebas automáticas Frontend](https://github.com/Profesion-Checher/Professions-Checker-Front/wiki/Pruebas-automáticas-de-software)
