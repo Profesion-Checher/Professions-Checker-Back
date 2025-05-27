@@ -1,5 +1,5 @@
 # Professions-Checker-Back
-## Contenido de la documentación:
+## Tabla de contenido:
 * [Sprint 0](https://github.com/Profesion-Checher/Professions-Checker-Back/wiki/Entrega-1-(Sprint-0))
 * [Sprint 1](https://github.com/Profesion-Checher/Professions-Checker-Back/wiki/Entrega-2-(Sprint-1))
 * [Sprint 2](https://github.com/Profesion-Checher/Professions-Checker-Back/wiki/Entrega-3-(Sprint-2))
